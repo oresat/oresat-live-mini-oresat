@@ -35,7 +35,7 @@ choose interface options
 enable ssh
 
 # Enable serial console (optional)
-Having access to a serial console can be handy for debug.  Connect a [USB serial cable](https://elinux.org/RPi_Serial_Connection) to the Raspberry Pi
+Having access to a serial console can be handy for debug.  Connect a [USB serial cable](https://elinux.org/RPi_Serial_Connection) to the Raspberry Pi.
 
 You will need to use terminal emulator software such as `screen` or `minicom` to access the serial console.
 
@@ -51,7 +51,7 @@ choose interface
 enable camera
 apt install python-picamera
 ```
-#Test Pi Camera
+# Test Pi Camera
 ```
 raspistill -v -o test.jpg
 ```
@@ -64,8 +64,6 @@ make
 ```
 
 # Enable Wi-Fi injection (using nexmon)
-Build patches for 
-
 The RPI3 and Zero W use the Broadcom bcm43430a1 Wi-Fi chip.  The official Broadcom firmware does not support packet injection.  Using the nexmon project we are able to modify the firmware to fit our needs.
 
 For more information on nexmon refere to https://github.com/seemoo-lab/bcm-rpi3 and https://github.com/seemoo-lab/nexmon
@@ -118,6 +116,7 @@ nexutil -k3 # set channel 3
 
 # Useful notes
 https://www.bountysource.com/issues/53837760-nexutil-on-raspberry-pi-3
+
 "We changed the behaviour of the brcmfmac driver on the rpi3 by adding a
 separate monitor interface. All monitored frames end up in the mon0
 interface and wlan0 can only be used for regular wifi traffic. There is

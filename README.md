@@ -11,12 +11,12 @@ In our testing the runtime for a 2500mAh battery is around 8 hours.  We recommen
 
 # Software Setup
 1. [Download the SD card image oresat_mini_14_jun_2019.img](https://drive.google.com/a/pdx.edu/uc?id=1wvfyT9Je4e_oCBOsYYcLTs5nHJPRHxZ7&export=download)
-2. Write the SD card image to a 2GB or larger card.
+2. Write the SD card image to a 2GB or larger card.  The [Raspberry Pi documentation](https://www.raspberrypi.org/documentation/installation/installing-images/) explains the procedure.
 
 # Launch Procedure
 1. Install the SD card in Raspberry Pi Zero W
 2. Connect the USB power bank
-3. Verify the ground station is able to recieve images
+3. Verify the ground station is able to receive images
 4. Release the balloon
 
 # Software Development
