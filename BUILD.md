@@ -43,7 +43,7 @@ sudo screen /dev/ttyUSB0 115200
 
 
 # Enable Pi Camera
-`apt install python-picamera`
+`sudo apt install python-picamera`
 
 `sudo raspi-config` choose **Interface Options** then **Enable Camera**
 
@@ -54,7 +54,8 @@ raspistill -v -o test.jpg
 
 # Compile wifibroadcast
 ```
-apt-get install libpcap-dev
+sudo su
+apt install libpcap-dev
 cd /root/wifibroadcast
 make
 ```
