@@ -30,9 +30,7 @@ enable_uart=1
 
 
 # Enable SSH
-sudo raspi-config
-choose interface options
-enable ssh
+`sudo raspi-config` choose **Interface Options** then **Enable SSH**
 
 # Enable serial console (optional)
 Having access to a serial console can be handy for debug.  Connect a [USB serial cable](https://elinux.org/RPi_Serial_Connection) to the Raspberry Pi.
@@ -66,7 +64,7 @@ make
 # Enable Wi-Fi injection (using nexmon)
 The RPI3 and Zero W use the Broadcom bcm43430a1 Wi-Fi chip.  The official Broadcom firmware does not support packet injection.  Using the nexmon project we are able to modify the firmware to fit our needs.
 
-For more information on nexmon refere to https://github.com/seemoo-lab/bcm-rpi3 and https://github.com/seemoo-lab/nexmon
+For more information on nexmon refer to https://github.com/seemoo-lab/bcm-rpi3 and https://github.com/seemoo-lab/nexmon
 
 ```
 sudo apt install git
