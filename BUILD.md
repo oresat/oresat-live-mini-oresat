@@ -43,12 +43,9 @@ sudo screen /dev/ttyUSB0 115200
 
 
 # Enable Pi Camera
-```
-sudo raspi-config
-choose interface
-enable camera
-apt install python-picamera
-```
+`apt install python-picamera`
+`sudo raspi-config` choose **Interface Options** then **Enable Camera**
+
 # Test Pi Camera
 ```
 raspistill -v -o test.jpg
@@ -67,10 +64,8 @@ The RPI3 and Zero W use the Broadcom bcm43430a1 Wi-Fi chip.  The official Broadc
 For more information on nexmon refer to https://github.com/seemoo-lab/bcm-rpi3 and https://github.com/seemoo-lab/nexmon
 
 ```
-sudo apt install git
-sudo apt-get install git gawk qpdf adb flex bison
+sudo apt install git gawk qpdf adb flex bison raspberrypi-kernel-headers libgmp3-dev
 
-sudo apt install raspberrypi-kernel-headers git libgmp3-dev gawk qpdf bison flex make
 git clone https://github.com/seemoo-lab/nexmon.git
 cd nexmon/buildtools/isl-0.10/
 sudo su
