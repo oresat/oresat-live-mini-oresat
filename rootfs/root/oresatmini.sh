@@ -12,4 +12,4 @@ sleep 3
 echo Starting wifi video broadcast at 6 Mbps
 /root/wifibroadcast/sharedmem_init_tx
 sleep 1
-/root/jpeg_stream_tx_stdout.py | /root/wifibroadcast/tx_rawsock -p 0 -b 4 -r 4 -f 1400 -t 1 -d 6 -y 0 mon0
+/root/jpeg_stream_tx_stdout.py | /root/wifibroadcast/tx_rawsock -p 0 -b 8 -r 2 -f 1400 -t 1 -d 6 -y 0 mon0
