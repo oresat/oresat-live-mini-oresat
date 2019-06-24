@@ -44,6 +44,7 @@ sudo screen /dev/ttyUSB0 115200
 
 # Enable Pi Camera
 `apt install python-picamera`
+
 `sudo raspi-config` choose **Interface Options** then **Enable Camera**
 
 # Test Pi Camera
